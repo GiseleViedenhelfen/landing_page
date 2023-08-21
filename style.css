@@ -1,0 +1,109 @@
+body, p {
+  margin: 0;
+  padding: 0;
+  font: 500 1rem "Manrope";
+}
+p {
+  line-height: 2rem;
+}
+body {
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem;
+  grid-template-rows: 10vh 5vh 80rem 5vh 15vh;
+  grid-template-areas: 'header header header'
+  '. . .'
+  '. main .'
+  '. . .'
+  'footer footer footer';
+}
+h1 {
+  font: 600 1.8rem "Manrope";
+}
+
+h1, h2, h3, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style-type: none;
+
+}
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ padding: 1rem;
+ gap: 1rem;
+ background: linear-gradient(to bottom, white, #ccc);
+ box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+}
+header h1, section h2 {
+color:#115060;
+}
+.svg {
+  height: 100%;
+  width: 50px;
+}
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+}
+footer {
+  grid-area: footer;
+  
+}
+.contact {
+  display: grid;
+  place-items: center;
+}
+footer p {
+  text-align: center;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container section {
+  border-radius: 10px;
+  padding: 2rem;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accounting-section {
+box-shadow:3px 3px 5px #7599a6;
+gap: 3rem;
+}
+
+.accounting-section img, .law-icons-section img, .file-icons-section img {
+  max-width: 10rem;
+  max-height: 15rem;
+}
+.law-icons-section {
+  align-self: flex-end;
+  align-items: center;
+  box-shadow: 3px 3px 5px  #854f62;
+  gap: 3rem;
+}
+
+.file-icons-section {
+  box-shadow:3px 3px 5px  #596a6f;
+}
+
+main hr {
+  border: 1px solid #115060;
+width: 100%;
+}
